@@ -4,7 +4,7 @@ A daily automated trade reconciliation utility that logs every run and maintains
 
 
 ## DOWNLOAD
-[📦 Download TradeReconciler.zip](./TradeReconciler.zip)
+[📦 Download TradeReconciler.zip](https://raw.githubusercontent.com/Nikhil-687/trade-reconciliation/main/TradeReconciler.zip)
 
 ## 📦 Install
 
