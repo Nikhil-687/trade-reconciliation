@@ -14,7 +14,7 @@ timestamp = datetime.datetime.now().strftime("%Y-%m-%d")
 file1 = path + '/system1/'+ 'system1_trades_' + timestamp + '.json'
 file2 = path + '/system2/'+ 'system2_trades_' + timestamp + '.json'
 
-print(file1, file2)
+# print(file1, file2)
 
 if not (file1):
     file1 = path + '/system1/'+ f'system1_trades_' + timestamp + '.csv'

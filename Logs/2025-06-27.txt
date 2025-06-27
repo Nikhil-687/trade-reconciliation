@@ -1,0 +1,4 @@
+Total mismatches: 0
+Maximum absolute amount mismatch of one trade: 0
+Trade ID with maximum mismatch: 0
+Total maximum absolute amount mismatch: 0
