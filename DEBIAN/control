@@ -1,0 +1,7 @@
+Package: traderecon
+Version: 1.0
+Section: utils
+Priority: optional
+Maintainer: Nikhil Patidar <patidarnikhil687@gmail.com>
+Depends: python3, cron, bash
+Description: Automated trade reconciliation tool with daily logging
