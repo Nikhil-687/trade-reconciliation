@@ -33,17 +33,17 @@ cd trade-reconciliation
 
 navigate to the project and do 
 
-#set up for daily
+   ##set up for daily
 ```bash
 chmod +x ./run.sh
 ./run.sh [--time/-t/''] [OPTIONS]
 ```
-#one time test
+   ##one time test
 ```bash
 chmod +x ./run.sh
 ./run.sh [RunNow] [OPTIONS]
 ```
-#run and save back to logs
+   ##run and save back to logs
 ```bash
 chmod +x ./run.sh
 ./run.sh [OPTIONS]
