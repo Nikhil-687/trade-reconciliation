@@ -33,10 +33,22 @@ cd trade-reconciliation
 
 navigate to the project and do 
 
+#set up for daily
 ```bash
 chmod +x ./run.sh
-./run.sh [OPTIONS] [--time/-t/' ']
+./run.sh [--time/-t/''] [OPTIONS]
 ```
+#one time test
+```bash
+chmod +x ./run.sh
+./run.sh [RunNow] [OPTIONS]
+```
+#run and save back to logs
+```bash
+chmod +x ./run.sh
+./run.sh [OPTIONS]
+```
+
 [OPTION] : "--summary-only", "--json-output", "--csv-output"
 --time/-t => set crontab timings
 ' ' => default timing 7 am 
