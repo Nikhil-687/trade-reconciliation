@@ -51,13 +51,19 @@ then
     echo  ""
     echo "m h  dom mon day: "
     read -rp "" time
+
+
+
+    if [[ "$2" = "--summary-only" || "$2" = "--json-output" || "$2" = "--csv-output" ]];
+    then
+        option=$2
+    else 
+        option="--summary-only"
+    fi
+    cron_line="$time $SCRIPT_PATH $option"
+    (crontab -l 2>/dev/null | grep -Fv "$SCRIPT_PATH"; echo "$cron_line") | crontab - 
+    (python3 -u "$path/reconcile_trades.py" "$option") 2>&1 | tee "$path/Logs/${File}.txt"
+else 
+    (python3 -u "$path/reconcile_trades.py" "$@") 2>&1 | tee "$path/Logs/${File}.txt"
 fi
 
-
-
-cron_line="$time $SCRIPT_PATH --summary-only"
-(crontab -l 2>/dev/null | grep -Fv "$SCRIPT_PATH"; echo "$cron_line") | crontab -
-
-
-
-(python3 -u "$path/reconcile_trades.py" "$2") 2>&1 | tee "$path/Logs/${File}.txt"

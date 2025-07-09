@@ -47,4 +47,5 @@ trade-reconciliation/Logs/YYYY-MM-DD.txt
 
 ## input 
 'trade-reconciliation/system1/system1_trades_' + YYYY-MM-DD + '.csv/.json'
+
 'trade-reconciliation/system2/system2_trades_' + YYYY-MM-DD + '.csv/.json'
