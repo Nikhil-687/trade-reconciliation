@@ -35,7 +35,7 @@ with open(file2, 'r') as file:
 
 
 mismatch_report = []
-with open(path+'mismatch_report.json', 'w') as file:
+with open(path+'/mismatch_report.json', 'w') as file:
     for key in trades1:
         trade1 = trades1[key]
         trade2 = trades2[key]
@@ -50,7 +50,7 @@ with open(path+'mismatch_report.json', 'w') as file:
     file.write(json.dumps(mismatch_report, indent=4))
 
 
-with open(path + "mismatch_report.csv", "w", newline="") as f:
+with open(path + "/mismatch_report.csv", "w", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=[
         "trade_id",
         "issue",
