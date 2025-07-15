@@ -15,7 +15,7 @@ A CLI-based automated trade reconciliation utility built with Bash and Python. I
 
 ## 🔧 Setup
 
-[📦 Download TradeReconciler.zip](https://raw.githubusercontent.com/Nikhil-687/trade-reconciliation/main/TradeReconciler.zip)
+[📦 Download TradeReconciler.zip](https://github.com/Nikhil-687/trade-reconciliation/archive/refs/heads/main.zip)
 
 ```bash
 sudo dpkg -i traderecon_1.0.deb
